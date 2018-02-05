@@ -6,6 +6,7 @@ import { LocationSearchComponent } from './components/location-search/location-s
 import { CurrentConditionsDisplayComponent } from './components/current-conditions-display/current-conditions-display.component';
 import { FiveDayDisplayComponent } from './components/five-day-display/five-day-display.component';
 import { TwelveHourDisplayComponent } from './components/twelve-hour-display/twelve-hour-display.component';
+import { AccuWeatherService } from './services/accu-weather.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { TwelveHourDisplayComponent } from './components/twelve-hour-display/twe
   imports: [
     BrowserModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [ AccuWeatherService ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
